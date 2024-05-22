@@ -1,0 +1,99 @@
+/* Common */
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+input,
+select {
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.sub-title {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+.content {
+  height: 100vh;
+  display: grid;
+  grid: 100% / 1fr 3fr;
+}
+.standard-text {
+  margin: 0;
+  color: #e5e5e5;
+}
+.popup-screen {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.popup-screen.off {
+  display: none;
+}
+.button-container {
+  display: flex;
+  gap: 5px;
+}
+
+/* Project Sidebar */
+.project-sidebar {
+  padding: 20px 10px;
+  border: 3px solid black;
+}
+.project-block {
+  padding: 10px 0 10px 8px;
+}
+.project-block:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.add-project {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+/* Project Content - Tasks */
+
+#project-content {
+  padding: 20px 10px;
+}
+.task-box {
+  padding: 10px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.task-box:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.task-info {
+  display: flex;
+  gap: 5px;
+}
+.task-options {
+}
+.add-task-button {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: 1px solid;
+  border-radius: 8px;
+}
